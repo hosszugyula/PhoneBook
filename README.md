@@ -19,7 +19,7 @@ The program is a phonebook application in which we can:
     }
   ```
   - update
-   ```
+  ```
   public void updateContact(Persons persons) {
         jdbi.installPlugin(new SqlObjectPlugin());
         List<Persons> personsup = jdbi.withExtension(PersonsDao.class, dao -> {
@@ -32,8 +32,8 @@ The program is a phonebook application in which we can:
         logger.info("The Contact being Updated");
     }
   ```
-  - delete contacts.
-   ```
+  - delete contacts
+  ```
    public void removeContact(Persons persons) {
         jdbi.installPlugin(new SqlObjectPlugin());
         List<Persons> personsrem = jdbi.withExtension(PersonsDao.class, dao -> {
@@ -45,9 +45,9 @@ The program is a phonebook application in which we can:
         });
         logger.info("Contacts Removed From Database");
     }
-   ```
-    - generate a pdf of contacts
-   ```
+  ```
+  - generate a pdf of contacts
+  ```
    private void exportList(ActionEvent event) {
         logger.info("Pdf generated");
         String fileName = inputExportName.getText();
@@ -59,7 +59,7 @@ The program is a phonebook application in which we can:
             alert("Adj meg egy fájlnevet!");
         }
     }
-   ```
+  ```
   
   
   
