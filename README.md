@@ -5,7 +5,7 @@ I made this maven project in Java language by a university assignment.
   -I manage the data using remote-mysql.
   
 The program is a phonebook application in which we can:
-  -add 
+  - add 
   ```
   public void addContact(Persons persons) {
         logger.info("Contacts Add To Database");
@@ -18,7 +18,7 @@ The program is a phonebook application in which we can:
         });
     }
   ```
-  -update
+  - update
    ```
   public void updateContact(Persons persons) {
         jdbi.installPlugin(new SqlObjectPlugin());
@@ -32,7 +32,7 @@ The program is a phonebook application in which we can:
         logger.info("The Contact being Updated");
     }
   ```
-  -delete contacts.
+  - delete contacts.
    ```
    public void removeContact(Persons persons) {
         jdbi.installPlugin(new SqlObjectPlugin());
@@ -46,7 +46,7 @@ The program is a phonebook application in which we can:
         logger.info("Contacts Removed From Database");
     }
    ```
-    -generate a pdf of contacts
+    - generate a pdf of contacts
    ```
    private void exportList(ActionEvent event) {
         logger.info("Pdf generated");
