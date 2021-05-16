@@ -2,7 +2,7 @@
 
 I made this [maven project](https://maven.apache.org/) in Java language by a university assignment.
   - I created the graphical interface using OpenJFX.
-  - I manage the data using remote-mysql.
+  - I manage the data using with remote-mysql.
   
 The program is a phonebook application in which we can:
   - add 
