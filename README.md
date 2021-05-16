@@ -60,6 +60,7 @@ The program is a phonebook application in which we can:
         }
     }
   ```
+  I log the operation of the program by [Apache Log4j 2](https://logging.apache.org/log4j/2.x/).
   
   
   
