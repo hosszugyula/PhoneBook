@@ -1,6 +1,6 @@
 # PhoneBook
 
-I made this maven project in Java language by a university assignment.
+I made this [maven project](https://maven.apache.org/) in Java language by a university assignment.
   -I created the graphical interface using OpenJFX.
   -I manage the data using remote-mysql.
   
@@ -62,23 +62,9 @@ The program is a phonebook application in which we can:
   ```
   I log the operation of the program by [Apache Log4j 2](https://logging.apache.org/log4j/2.x/).
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+ The tests were performed on [JUnit 5 programmer-friendly testing framework](https://junit.org/junit5/).
+ 
+ The executable JAR file should be run as follows:
+ ```
+ java -jar ./target/PhoneBook-1.0-shaded.jar
+ ```
