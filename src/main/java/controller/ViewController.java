@@ -75,12 +75,20 @@ public class ViewController implements Initializable {
 
     @FXML
     private void addContact(ActionEvent event) {
-        Persons newPerson = new Persons(inputLastname.getText(), inputFirstName.getText(), inputPhoneNumber.getText());
+        String lastname = inputLastname.getText();
+        String firstname = inputFirstName.getText();
+        String phonenumber = inputPhoneNumber.getText();
+        if(lastname.length() >= 3 && firstname.length() > 3 && phonenumber.length() > 3){
+        Persons newPerson = new Persons(lastname, firstname, phonenumber);
         data.add(newPerson);
         db.addContact(newPerson);
         inputLastname.clear();
         inputFirstName.clear();
         inputPhoneNumber.clear();
+    }else{
+        alert("Enter real data");
+        logger.error("Invalid data was entered");
+        }
     }
 
     @FXML
@@ -92,7 +100,8 @@ public class ViewController implements Initializable {
             PdfGeneration pdfCreator = new PdfGeneration();
             pdfCreator.pdfGeneration(fileName, data);
         }else{
-            alert("Adj meg egy fájlnevet!");
+            alert("Enter a file name!");
+            logger.error("Invalid file name was entered");
         }
     }
 

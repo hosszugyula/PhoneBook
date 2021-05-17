@@ -1,7 +1,5 @@
 package database;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import person.Persons;
@@ -17,7 +15,6 @@ public class DB2Test {
     private Persons person4;
     private Persons person5;
     private Persons person6;
-    private PersonsDao personsDao;
 
     private DB2 db;
 
@@ -72,15 +69,4 @@ public class DB2Test {
         db.removeContact(person1);
     }
 
-    @Test
-    public void givenLoggerWithDefaultConfig_whenLogToConsole_thanOK()
-            throws Exception {
-        Logger logger = LogManager.getLogger(getClass());
-        Exception ex = new RuntimeException("This is only a test!");
-
-        logger.info("This is a simple message at INFO level. " +
-                "It will be hidden.");
-        logger.error("This is a simple message at ERROR level. " +
-                "This is the minimum visible level.", ex);
-    }
 }
