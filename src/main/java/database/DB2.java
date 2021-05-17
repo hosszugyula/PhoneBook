@@ -19,8 +19,8 @@ public class DB2 {
     Connection conn = null;
     String URL = "jdbc:mysql://remotemysql.com:3306/eTtWTwnkmb?useSSL=false";
     String DRIVER = "com.mysql.jdbc.Driver";
-    String  USERNAME = "eTtWTwnkmb";
-    String  PASSWORD = "Ae0kmBCpPY";
+    String  USERNAME = "";
+    String  PASSWORD = "";
 
     Logger logger = LogManager.getLogger(getClass());
 
